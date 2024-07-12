@@ -154,6 +154,7 @@ input {
   left: 376px;
   width: 100%;
   height: 50px;
+  border: 0px;
   /* UI Properties */
   background: #ff3366 0% 0% no-repeat padding-box;
   border-radius: 9px;
@@ -165,7 +166,6 @@ input {
 .page2 {
   margin-left: 200px;
   height: 900px;
-  border: 2px solid red;
 }
 #txt {
   color: #ff3366;
@@ -199,8 +199,6 @@ input {
   margin-right: 200px;
 }
 
-
-
 .slider-container {
   position: relative;
   width: 100%;
@@ -211,7 +209,6 @@ input {
 .sliderbox {
   display: flex;
   transition: transform 2s ease-in-out;
-
 }
 
 .img {
@@ -220,32 +217,30 @@ input {
   height: 500px;
 }
 
-
-.img-cont{
+.img-cont {
   width: 400px;
   margin-left: 10px;
   margin-right: 10px;
   height: 500px;
   position: relative;
 }
-.test{
+.test {
   width: 400px;
   height: 500px;
   display: none;
   background-color: #dd2150;
   position: absolute;
-
 }
 
-.txt2{
+.txt2 {
   color: white;
   display: flex;
   justify-content: center;
   text-align: center;
-padding-top: 20px;
+  padding-top: 20px;
   width: 400px;
 }
-.read-more-button{
+.read-more-button {
   width: 180px;
   height: 50px;
   margin-left: 110px;
@@ -258,46 +253,44 @@ padding-top: 20px;
   font-size: 15px;
   margin-top: 30px;
 }
-.icon{
+.icon {
   margin-top: 100px;
   margin-left: 160px;
   height: 70px;
   width: 70px;
 }
-.web{
+.web {
   color: white;
   margin-top: 40px;
   font-size: x-large;
   display: flex;
   justify-content: center;
 }
-.arrow-icon{
+.arrow-icon {
   padding: 5px;
 }
 .dots {
   text-align: left;
   position: relative;
   margin-top: 20px;
-    bottom: 15px;
+  bottom: 15px;
   width: 100%;
 }
-.img-cont:hover .test{
-display: block;
-/* transition: transform 0.5s ; */
+.img-cont:hover .test {
+  display: block;
 }
-
 
 .dot {
   cursor: pointer;
-  height: 30px; 
-  width: 30px; 
-  margin: 0 5px; 
-  border: 2px solid transparent; 
-  border-radius: 50%; 
+  height: 30px;
+  width: 30px;
+  margin: 0 5px;
+  border: 2px solid transparent;
+  border-radius: 50%;
   background-color: transparent;
   display: inline-block;
-  transition: all 0.6s ease; 
-  position: relative; 
+  transition: all 0.6s ease;
+  position: relative;
 }
 
 .dot::before {
@@ -307,20 +300,197 @@ display: block;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 12px;
-  width: 12px; 
-  background-color: #000; 
-  border-radius: 50%; 
+  width: 12px;
+  background-color: #000;
+  border-radius: 50%;
   transition: background-color 0.3s ease, height 0.3s ease, width 0.3s ease; /* Smooth transition for changes */
 }
 
 .dot.active {
-  border-color: #ff3366; 
-  background-color: #fff; 
+  border-color: #ff3366;
+  background-color: #fff;
 }
 
 .dot.active::before {
-  background-color: #ff3366; 
-  height: 6px; 
-  width: 6px; 
+  background-color: #ff3366;
+  height: 6px;
+  width: 6px;
 }
 
+.page3 {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.choose {
+  color: #ff3147;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: "Cormorant SC";
+  padding: 30px;
+  margin-top: 30px;
+  font-weight: bolder;
+}
+
+.best {
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.box2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  height: 200px;
+  width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+}
+.smallbox {
+  width: 270px;
+}
+.same {
+  padding: 5px;
+}
+.headi {
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.simple {
+  padding-top: 20px;
+}
+
+/*new*/
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-left: 150px;
+  margin-right: 150px;
+
+  font-family: Arial, sans-serif;
+}
+
+.carousel-container {
+  display: flex;
+  width: 1500px;
+  height: 600px;
+
+  overflow: hidden;
+}
+
+.carousel-photo {
+  flex: 1;
+  position: relative;
+  margin-right: 30px;
+}
+
+.carousel-photo img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.carousel-photo img.active {
+  opacity: 1;
+}
+
+.carousel-text {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f5f5f5;
+}
+
+.text {
+  padding: 10px;
+  height: 300px;
+
+  transition: background-color 0.5s ease-in-out;
+}
+
+.text.active {
+  background-color: #ff3147;
+  color: #fff;
+}
+
+.page4 {
+}
+.horizon {
+  width: 1160px;
+  margin-top: 100px;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.smallbox1 {
+  width: 250px;
+  height: 250px;
+  background-color: rgb(243, 243, 243);
+  transition: background-color 0.3s ease, box-shadow 0.5s ease, transform 0.6s ease;
+
+}
+
+.smallbox1:hover {
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); 
+  transform: scale(1.05); 
+}
+.ico {
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 110px;
+}
+.grey {
+  background-color: rgb(234, 234, 234);
+  height: 600px;
+}
+.thick {
+  width: 200px;
+  font-size: 60px;
+  font-weight: 400;
+  margin-left: 60px;
+  font-family: "poppins";
+}
+.thin {
+  text-align: center;
+  font-family: "poppins";
+}
+.img-txt{
+  margin-top: 60px;
+  height: 400px;
+  position: relative;
+
+}
+
+.quotes{
+height: 60px;
+margin-left: 400px;
+}
+.txt4{
+  margin-left: 420px;
+  position: absolute;
+  top: 30px; 
+  left: 0; 
+  font-size: 20px;
+  letter-spacing: 1px;
+  width: 800px;
+}
