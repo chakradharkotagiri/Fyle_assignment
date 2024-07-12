@@ -165,6 +165,7 @@ input {
 .page2 {
   margin-left: 200px;
   height: 900px;
+  border: 2px solid red;
 }
 #txt {
   color: #ff3366;
@@ -185,7 +186,7 @@ input {
   width: 400px;
 }
 
-.txt2 {
+.txt3 {
   top: 1114px;
   left: 960px;
   width: 584px;
@@ -218,9 +219,7 @@ input {
   /* margin: 10px; */
   height: 500px;
 }
-.test{
-  position: absolute;
-}
+
 
 .img-cont{
   width: 400px;
@@ -233,9 +232,48 @@ input {
   width: 400px;
   height: 500px;
   display: none;
-  background-color: black;
+  background-color: #dd2150;
+  position: absolute;
+
 }
 
+.txt2{
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+padding-top: 20px;
+  width: 400px;
+}
+.read-more-button{
+  width: 180px;
+  height: 50px;
+  margin-left: 110px;
+  background-color: white;
+  display: flex;
+  border: 0px;
+  color: #e43560;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 30px;
+}
+.icon{
+  margin-top: 100px;
+  margin-left: 160px;
+  height: 70px;
+  width: 70px;
+}
+.web{
+  color: white;
+  margin-top: 40px;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+}
+.arrow-icon{
+  padding: 5px;
+}
 .dots {
   text-align: left;
   position: relative;
@@ -245,6 +283,7 @@ input {
 }
 .img-cont:hover .test{
 display: block;
+/* transition: transform 0.5s ; */
 }
 
 
