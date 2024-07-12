@@ -1,0 +1,287 @@
+.box1 {
+  display: flex;
+  border: 2px;
+  height: 1000px;
+}
+.contactus {
+  margin-left: 200px;
+}
+.img1 {
+  display: flex;
+}
+
+.award {
+  font-family: "Times New Roman", Times, serif;
+  font-size: x-large;
+  color: #ff3147;
+  margin-top: 243px;
+}
+.digital {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xxx-large;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-right: 20%;
+}
+.trans {
+  font-family: poppins;
+  width: 500px;
+  margin-top: 20px;
+}
+.hero {
+  top: 100px;
+  left: 1058px;
+  width: 450px;
+  height: 650px;
+  padding: 80px;
+  padding-right: 100px;
+}
+.contact {
+  margin-top: 20px;
+  top: 645px;
+  left: 376px;
+  width: 160px;
+  height: 50px;
+  background: #ff3366 0% 0% no-repeat padding-box;
+  border-radius: 2px;
+  color: white;
+  display: flex;
+  border: 0px;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  height: 320px;
+  width: 400px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  padding: 20px;
+  visibility: hidden;
+  background-color: white;
+  transition: transform 01s;
+}
+
+.open-popup {
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.talk {
+  margin-top: 20px;
+  font-weight: bolder;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  background-color: transparent;
+  padding: 5px;
+  font-size: 17px;
+
+  margin-top: 20px;
+}
+#inp {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#inp1 {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+#inp2 {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+.custom-checkbox {
+  font-family: poppins;
+  font-size: 15px;
+}
+.custom-checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.custom-checkbox .checkmark {
+  position: relative;
+  height: 15px;
+  width: 15px;
+  border: 2px solid #ff3147;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .checkmark {
+  background-color: #ff3366;
+}
+
+.custom-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .checkmark:after {
+  display: block;
+}
+
+.custom-checkbox .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.submit {
+  top: 645px;
+  left: 376px;
+  width: 100%;
+  height: 50px;
+  /* UI Properties */
+  background: #ff3366 0% 0% no-repeat padding-box;
+  border-radius: 9px;
+  opacity: 1;
+  color: white;
+  margin-top: 20px;
+  margin-left: auto;
+}
+.page2 {
+  margin-left: 200px;
+  height: 900px;
+}
+#txt {
+  color: #ff3366;
+  font-size: 20px;
+  font-weight: light;
+  font-family: "poppins";
+  margin-bottom: 20px;
+}
+.disp {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.txt1 {
+  font-size: 20px;
+  font: normal normal bold 45px/65px Cormorant SC;
+  letter-spacing: 0px;
+  width: 400px;
+}
+
+.txt2 {
+  top: 1114px;
+  left: 960px;
+  width: 584px;
+  height: 83px;
+  text-align: left;
+  font: normal normal normal 16px/30px "Poppins";
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  margin-right: 200px;
+}
+
+
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  overflow: hidden;
+}
+
+.sliderbox {
+  display: flex;
+  transition: transform 2s ease-in-out;
+
+}
+
+.img {
+  width: 400px;
+  /* margin: 10px; */
+  height: 500px;
+}
+.test{
+  position: absolute;
+}
+
+.img-cont{
+  width: 400px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 500px;
+  position: relative;
+}
+.test{
+  width: 400px;
+  height: 500px;
+  display: none;
+  background-color: black;
+}
+
+.dots {
+  text-align: left;
+  position: relative;
+  margin-top: 20px;
+    bottom: 15px;
+  width: 100%;
+}
+.img-cont:hover .test{
+display: block;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 30px; 
+  width: 30px; 
+  margin: 0 5px; 
+  border: 2px solid transparent; 
+  border-radius: 50%; 
+  background-color: transparent;
+  display: inline-block;
+  transition: all 0.6s ease; 
+  position: relative; 
+}
+
+.dot::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 12px;
+  width: 12px; 
+  background-color: #000; 
+  border-radius: 50%; 
+  transition: background-color 0.3s ease, height 0.3s ease, width 0.3s ease; /* Smooth transition for changes */
+}
+
+.dot.active {
+  border-color: #ff3366; 
+  background-color: #fff; 
+}
+
+.dot.active::before {
+  background-color: #ff3366; 
+  height: 6px; 
+  width: 6px; 
+}
+

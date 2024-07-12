@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fyle</title>
+  <link rel="stylesheet" href="home.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="../images/Screenshot 2024-07-11 at 4.41.16 PM.png" type="image/png" />
+</head>
+<body>
+  <div class="box1">
+    <div class="contactus">
+      <div class="award">AWARD WINNING</div>
+      <div class="digital">Digital Marketing Agency</div>
+      <div class="trans">
+        Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+        Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus
+        nec risus finibus feugiat et fermentum
+      </div>
+      <button class="contact" onclick="openPopup()">CONTACT US</button>
+    </div>
+    <div class="img1">
+      <img class="hero" src="../images/hero@2x.png" alt="screenshot" />
+    </div>
+  </div><!--closing box1-->
+
+  <div class="popup" id="popup">
+    <div class="talk">Talk To Us</div>
+    <input type="text" label="Work email *" placeholder="Work email *" />
+    <div id="inp">
+      <input type="text" class="inp1" placeholder="First name*" />
+      <input type="text" class="inp2" placeholder="Last name *" />
+    </div>
+    <label class="custom-checkbox">
+      <input type="checkbox" id="checkbox" />
+      <span class="checkmark"></span>
+      I agree to Fyle's terms and conditions, and provide consent to send me
+      communication.
+    </label>
+    <button class="submit" onclick="closePopup()">Contact us</button>
+  </div><!-- closing popup -->
+
+  <div class="page2">
+    <div id="txt">WHAT WE DO</div>
+    <div class="disp">
+      <div class="txt1">SERVICES PROVIDE FOR YOU</div>
+      <div class="txt2">
+        Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+        Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus
+        nec risus finibus feugiat et fermentum
+      </div>
+    </div><!--closing disp-->
+
+    <div class="slider-container">
+      <div class="sliderbox">
+        <div class="img-cont">
+          <div class="test">hover check</div>
+          <img src="../images/pinterest img.jpeg" alt="img4" class="img" />
+        </div>
+        <div class="img-cont">
+          <div class="test">hover check</div>
+          <img class="img active" src="../images/1@2x.png" alt="img1" />
+        </div>
+        <div class="img-cont">
+          <div class="test">hover check</div>
+          <img class="img" src="../images/2@2x.png" alt="img2" />
+        </div>
+        <div class="img-cont">
+          <div class="test">hover check</div>
+          <img class="img" src="../images/3@2x.png" alt="img3" />
+        </div>
+        <div class="img-cont">
+          <div class="test">hover check</div>
+          <img src="../images/pinterest img.jpeg" alt="img4" class="img" />
+        </div>
+      </div><!--closingsliderbox-->
+      <div class="dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+
+      </div><!--closingdots-->
+    </div><!--closing slidercontainer-->
+  </div><!-- closing page2-->
+
+  <script>
+    let popup = document.getElementById("popup");
+
+    function openPopup() {
+      popup.classList.add("open-popup");
+    }
+    function closePopup() {
+      popup.classList.remove("open-popup");
+    }
+  </script>
+  <script src="home.js"></script>
+</body>
+</html>
