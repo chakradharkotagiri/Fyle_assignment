@@ -476,7 +476,7 @@ input {
 }
 .img-txt{
   margin-top: 60px;
-  height: 400px;
+  height: 150px;
   position: relative;
 
 }
@@ -493,4 +493,40 @@ margin-left: 400px;
   font-size: 20px;
   letter-spacing: 1px;
   width: 800px;
+}
+.jannat{
+  margin-left:  420px; ;
+  display: flex;
+}
+.tumpa{
+  color: #FF3147;
+  font-family: "poppins";
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 20px;
+
+}
+.coo{
+  color: #808080;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+}
+.footer{
+  position: relative;
+}
+.foot{
+  height: 250px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+.final{
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%);
+
+  height: 80px;
+  width: 900px;
 }
