@@ -1,7 +1,7 @@
 let currentSlideIndex = 1;
 const slides = document.querySelectorAll('.img');
 const dots = document.querySelectorAll('.dot');
-const totalSlides = slides.length - 1; // Exclude cloned slides
+const totalSlides = slides.length - 1; 
 const sliderbox = document.querySelector('.sliderbox');
 const slideWidth = slides[0].clientWidth;
 
@@ -16,18 +16,18 @@ function updateDots(index) {
 
 function showSlide(index) {
   sliderbox.style.transition = 'transform 1s ease-in-out';
-  sliderbox.style.transform = `translateX(${-index * (slideWidth + 20)}px)`; // Adjust margin value if necessary
+  sliderbox.style.transform = `translateX(${-index * (slideWidth + 20)}px)`; 
 
   if (index === 0) {
     setTimeout(() => {
       sliderbox.style.transition = 'none';
-      sliderbox.style.transform = `translateX(${-totalSlides * (slideWidth + 20)}px)`; // Adjust margin value if necessary
+      sliderbox.style.transform = `translateX(${-totalSlides * (slideWidth + 20)}px)`; 
     }, 1000);
     currentSlideIndex = totalSlides;
   } else if (index === totalSlides + 1) {
     setTimeout(() => {
       sliderbox.style.transition = 'none';
-      sliderbox.style.transform = `translateX(${-(slideWidth + 20)}px)`; // Adjust margin value if necessary
+      sliderbox.style.transform = `translateX(${-(slideWidth + 20)}px)`; 
     }, 1000);
     currentSlideIndex = 1;
   }
@@ -48,18 +48,18 @@ function currentSlide(index) {
   showSlide(currentSlideIndex);
 }
 
-// Auto-slide every 6 seconds
+
 setInterval(nextSlide, 6000);
 
-// Initialize slider position
+
 window.addEventListener('load', () => {
   sliderbox.style.transition = 'none';
-  sliderbox.style.transform = `translateX(${-(slideWidth + 20)}px)`; // Adjust margin value if necessary
+  sliderbox.style.transform = `translateX(${-(slideWidth + 20)}px)`; 
   setTimeout(() => {
     sliderbox.style.transition = 'transform 1s ease-in-out';
   }, 50);
 });
-// script.js
+
 
 document.addEventListener("DOMContentLoaded", () => {
     let currentIndex = 0;
@@ -98,3 +98,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     showSlide(currentIndex);
 });
+
+

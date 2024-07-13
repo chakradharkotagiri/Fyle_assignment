@@ -39,12 +39,47 @@
     </div>
     <!--closing box1-->
 
-    <div class="popup" id="popup">
-      <div class="talk">Talk To Us</div>
-      <input type="text" label="Work email *" placeholder="Work email *" />
+    <form
+      action="https://getform.io/f/aejyjkeb"
+      method="POST"
+      class="popup"
+      id="popup"
+    >
+      <div class="parent">
+        <div class="talk">Talk To Us</div>
+
+        <button class="close" type="button" onclick="closePopup()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 50 50"
+            width="25px"
+            height="25px"
+          >
+            <path
+              d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"
+            />
+          </svg>
+        </button>
+      </div>
+      <input
+        type="text"
+        name="email"
+        label="Work email *"
+        placeholder="Work email *"
+      />
       <div id="inp">
-        <input type="text" class="inp1" placeholder="First name*" />
-        <input type="text" class="inp2" placeholder="Last name *" />
+        <input
+          type="text"
+          class="inp1"
+          name="First Name"
+          placeholder="First name*"
+        />
+        <input
+          type="text"
+          class="inp2"
+          name="Last Name"
+          placeholder="Last name *"
+        />
       </div>
       <label class="custom-checkbox">
         <input type="checkbox" id="checkbox" />
@@ -52,8 +87,9 @@
         I agree to Fyle's terms and conditions, and provide consent to send me
         communication.
       </label>
+
       <button class="submit" onclick="closePopup()">Contact us</button>
-    </div>
+    </form>
     <!-- closing popup -->
 
     <div class="page2">
@@ -318,17 +354,19 @@
           reproduced below for those interested. Sections Bonorum et Malorum
           original.
         </div>
-      </div><!--closing img-txt-->
+      </div>
+      <!--closing img-txt-->
       <div class="jannat">
         <div class="tumpa">JANNAT TUMPA</div>
         <div class="coo">- COO, AMERIMAR ENTERPRISES, INC.</div>
       </div>
-    </div> <!--closing page4-->
+    </div>
+    <!--closing page4-->
     <div class="footer">
-      <img src="../images/NoPath - Copy@2x.png" alt="" class="foot">
-      <img src="../images/Group 500@2x.png" alt="" class="final">
-    </div><!--closing footer-->
-   
+      <img src="../images/NoPath - Copy@2x.png" alt="" class="foot" />
+      <img src="../images/Group 500@2x.png" alt="" class="final" />
+    </div>
+    <!--closing footer-->
 
     <script>
       let popup = document.getElementById("popup");

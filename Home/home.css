@@ -51,6 +51,17 @@
   justify-content: center;
   align-items: center;
 }
+.parent{
+  display: flex;
+}
+.close{
+  margin-left: 200px;
+
+  margin-top: 20px;
+  background: none;
+  border: 0px;
+
+}
 
 .popup {
   position: fixed;
@@ -63,12 +74,14 @@
   border: 1px solid black;
   padding: 20px;
   visibility: hidden;
+  /* display: none; */
   background-color: white;
   transition: transform 01s;
 }
 
 .open-popup {
   visibility: visible;
+  /* display: block; */
   transform: translate(-50%, -50%) scale(1);
 }
 
@@ -382,7 +395,7 @@ input {
 
 .carousel-container {
   display: flex;
-  width: 1500px;
+  width: 1000px;
   height: 600px;
 
   overflow: hidden;
@@ -409,6 +422,7 @@ input {
 
 .carousel-text {
   flex: 1;
+  width: 200px;
 
   display: flex;
   flex-direction: column;
