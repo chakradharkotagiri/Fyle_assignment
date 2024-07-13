@@ -99,6 +99,7 @@ input {
   padding: 5px;
   font-size: 17px;
 
+
   margin-top: 20px;
 }
 #inp {
@@ -153,8 +154,8 @@ input {
 }
 
 .custom-checkbox .checkmark:after {
-  left: 6px;
-  top: 3px;
+  left: 3px;
+  top: 0px;
   width: 6px;
   height: 10px;
   border: solid white;
@@ -265,6 +266,11 @@ input {
   align-items: center;
   font-size: 15px;
   margin-top: 30px;
+
+}
+.read-more-button:hover {
+  cursor: pointer;
+
 }
 .icon {
   margin-top: 100px;
@@ -385,6 +391,7 @@ input {
 .carousel {
   display: flex;
   justify-content: center;
+
   align-items: center;
   height: 100vh;
   margin-left: 150px;
@@ -395,16 +402,28 @@ input {
 
 .carousel-container {
   display: flex;
-  width: 1000px;
-  height: 600px;
-
+  /* width: 1000px; */
+  height: 500px;
+  margin-left: 150px;
   overflow: hidden;
+
+
 }
 
 .carousel-photo {
   flex: 1;
   position: relative;
   margin-right: 30px;
+  width: 1000px;
+  
+}
+.carousel-text {
+  flex: 1;
+  margin-right: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f5f5f5;
 }
 
 .carousel-photo img {
@@ -420,15 +439,6 @@ input {
   opacity: 1;
 }
 
-.carousel-text {
-  flex: 1;
-  width: 200px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #f5f5f5;
-}
 
 .text {
   padding: 10px;
@@ -494,7 +504,9 @@ input {
   position: relative;
 
 }
-
+#worke{
+width: 390px;
+}
 .quotes{
 height: 60px;
 margin-left: 400px;
